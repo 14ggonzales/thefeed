@@ -1,0 +1,115 @@
+
+    /*Text on right side of the screen*/
+h1{ 
+        color: red;
+        text-align: center;
+        text-decoration: underline;
+        margin-top: 20px;
+        position: fixed;
+        top: 70px; /* Adjust this value to position the GIF below the navigation bar */
+        right: 20px; /* Adjust this value to position the GIF from the right side */
+        border: 2px solid black;
+        background-color: midnightblue;
+        padding: 10px;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+        /*Captions under photos and or gifs*/
+p{
+        font-family: "dovetail-mvb", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+        /*videos and images in middle*/
+body{
+        background-image: url(../img/mainweb2.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        flex-wrap: wrap;
+        display: flex;
+        padding-top: 100px; /* Adjust this value to move the content below the navigation bar */
+    }
+
+   
+    .column {
+        max-width: 100%;
+        height: auto;
+        margin: 10px auto; /* Center the column horizontally */
+        text-align: center;
+    }
+    
+    /*Captions for videoe*/
+    p{
+        font-family: "ringold-soft", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+/*Navigation Bar*/
+    .header {
+        display: flex;
+        justify-content: center; /* Center the links horizontally */
+        align-items: center; /* Center the links vertically */
+        border-bottom: 1px solid #ccc; /* Border at the bottom of the header */
+        padding: 10px 0; /* Padding above and below the headlines */
+        font-size: 24px; /* Larger font size */
+        font-weight: bold; /* Bold text */
+        background-color: rgba(173, 216, 230, 0.8); /* Semi-transparent baby blue background */
+        width: 100%; /* Full width */
+        position: fixed; /* Fixed position at the top */
+        top: 0; /* Align at the top */
+        z-index: 1000; /* Ensure it's above other content */
+        font-family: "ringold-slab", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    .header a {
+        text-decoration: none; /* Remove underline from links */
+        color: #333; /* Text color */
+        padding: 20px 20px; /* Padding around the links */
+        margin: 0 60px; /* Spacing between the links */
+        border: 1px solid #ccc; /* Border around the links */
+        border-radius: 5px; /* Rounded corners for the borders */
+    }
+    
+    .header a:hover {
+        background-color: #f0f0f0; /* Background color on hover */
+    }
+
+    img{
+    display: block;
+}
+
+/* Sleeping turtle Gif */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: rgba(173, 216, 230, 0.8);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.gif-container {
+    position: fixed;
+    top: 70px; /* Adjust this value to position the GIF below the navigation bar */
+    left: 20px; /* Adjust this value to position the GIF from the left side */
+}
+
+.gif-container img {
+    width: auto;
+    height: auto;
+}
