@@ -1,0 +1,9 @@
+body{
+    background-image: url(../img/mainweb3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    flex-wrap: wrap; /* you were missing a semicolon*/
+    display: flex;
+}

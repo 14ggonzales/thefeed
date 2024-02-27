@@ -87,7 +87,7 @@ body{
     display: block;
 }
 
-/* Sleeping turtle Gif */
+
 .header {
     display: flex;
     justify-content: center;
@@ -103,13 +103,13 @@ body{
     z-index: 1000;
 }
 
-.gif-container {
-    position: fixed;
-    top: 70px; /* Adjust this value to position the GIF below the navigation bar */
-    left: 20px; /* Adjust this value to position the GIF from the left side */
+.gif{
+    position: relative;
 }
 
-.gif-container img {
-    width: auto;
-    height: auto;
+/* Sleeping turtle Gif */
+.gif img {
+    width: 50%;
+    position: fixed;
+    left: 0;
 }
