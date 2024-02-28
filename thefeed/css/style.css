@@ -1,40 +1,41 @@
+/*Text on right side of the screen*/
+h1 {
+    conic-gradient:(#553c9a, #ee4b2b, #00c2cb, #553c9a);
+    text-decoration: underline;
+    text-align: right;
+    margin-top: 20px;
+    position: fixed;
+    top: 70px; /* Adjust this value to position the h1 below the navigation bar */
+    right: 20px;
+    z-index: 1000;
 
-    /*Text on right side of the screen*/
-    h1 {
-        conic-gradient:(#553c9a, #ee4b2b, #00c2cb, #553c9a);
-        text-decoration: underline;
-        text-align: right;
-        margin-top: 20px;
-        position: fixed;
-        top: 70px; /* Adjust this value to position the h1 below the navigation bar */
-        right: 20px;
-        z-index: 1000;
-        
-        color: white;
-    }
+    color: #90EE90; /* Light green text color */
+    text-shadow: 2px 2px 4px #000; /* Black 3D shadow */
+}
 
-    .container h1 {
-        text-align: center; /* Center the text */
-        padding: 20px; /* Add padding for spacing */
-        animation: typing 10s infinite steps(16); /* Apply the typing animation */
+.container h1 {
+    text-align: center; /* Center the text */
+    padding: 20px; /* Add padding for spacing */
+    animation: typing 10s infinite steps(16); /* Apply the typing animation */
+}
+
+/* Keyframes for the typing animation */
+@keyframes typing {
+    from {
+        width: 0; /* Start with no width */
     }
-    
-    /* Keyframes for the typing animation */
-    @keyframes typing {
-        from {
-            width: 0; /* Start with no width */
-        }
-        to {
-            width: 300%; /* End with full width */
-        }
+    to {
+        width: 300%; /* End with full width */
     }
+}
+
 
 
     
     .h3-container {
         text-align: right;
-        border: 2px solid rgba(169, 169, 169, 0.5); /* Light transparent gray border */
-        background-color: #e6e6fa; /* Light purple background */
+        border: 6px solid #90EE90; /* Light green border */
+        background-color: #800080; /* Dark purple background */
         padding: 70px;
         position: fixed;
         top: 170px; /* Adjust this value to position the h3 container below the h1 */
@@ -43,6 +44,8 @@
         width: 300px; /* Set a fixed width for the column */
         max-height: calc(100vh - 200px); /* Set a maximum height for the column */
         overflow-y: auto; /* Add vertical scroll if content exceeds maximum height */
+        color: white;
+        letter-spacing: 2px;
     }
     
     .h3-container h3 {
@@ -59,11 +62,11 @@
         margin-left: 100%;
         width: 300%;
     }
-    70% {
+    10% {
         margin-left: 0%;
         width: 100%;
     }
-    100% {
+    120% {
         margin-left: 0%;
         width: 100%;
     }
