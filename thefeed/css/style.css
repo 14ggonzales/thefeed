@@ -19,9 +19,10 @@ h1{
 
         /*Captions under photos and or gifs*/
 p{
-        font-family: "dovetail-mvb", serif;
-        font-weight: 400;
-        font-style: normal;
+    font-family: "clarendon-urw", serif;
+    font-weight: 400;
+    font-style: italic;
+    color: white;
     }
 
         /*videos and images in middle*/
@@ -42,6 +43,24 @@ body{
         height: auto;
         margin: 10px auto; /* Center the column horizontally */
         text-align: center;
+        position: relative; /* Add position relative to enable absolute positioning of the background */
+    }
+
+    .column::before {
+        content: '';
+        position: absolute;
+        top: 4px; /* Adjust to match the border width */
+        left: -4px; /* Adjust to match the border width */
+        width: calc(100% + 8px); /* Adjust to match the border width */
+        height: calc(100% + 9px); /* Adjust to match the border width */
+        background-color: rgba(30, 30, 30, 0.5); /* Darker gray transparent background */
+        z-index: -1; /* Send the background behind the content */
+    }
+
+    .video {
+        border: 2px solid whitesmoke; /* Create a black border around each video */
+        padding: 10px; /* Add some space between the border and the video content */
+        margin: 10px; /* Add some space between videos */
     }
     
     /*Captions for videoe*/
@@ -49,6 +68,7 @@ body{
         font-family: "ringold-soft", sans-serif;
         font-weight: 400;
         font-style: normal;
+        padding: 0 20px; /* Add padding to the left and right */
     }
 
 /*Navigation Bar*/
@@ -109,7 +129,47 @@ body{
 
 /* Sleeping turtle Gif */
 .gif img {
-    width: 50%;
+    width: 30%;
     position: fixed;
     left: 0;
+}
+
+
+
+footer {
+    /* Your footer styles */
+    position: relative;
+}
+
+#back-to-top-btn {
+    position: absolute;
+    bottom: 20px; /* Adjust the distance from the bottom */
+    right: 20px; /* Adjust the distance from the right */
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#back-to-top-btn:hover {
+    background-color: #555;
+}
+
+
+#back-to-top-btn {
+    position: absolute;
+    bottom: 20px; /* Adjust the distance from the bottom */
+    right: 20px; /* Adjust the distance from the right */
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#back-to-top-btn:hover {
+    background-color: #555;
 }
