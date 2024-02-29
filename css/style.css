@@ -1,11 +1,19 @@
-h1{ 
+/*  h1 {
     color: red;
-    text-align: center;
+    
     text-decoration: underline;
     font-family: "ringold-slab", sans-serif;
     font-weight: 400;
     font-style: normal;
-}
+    font-size: 2em; /* Adjust the font size as needed */
+    display: flex;
+    justify-content: center;
+}*/
+
+
+
+
+
 
 h2{ 
     color: greenyellow;
@@ -30,6 +38,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh; /* Set the height of the container to the full viewport height */
+    padding-left: 300px;
 }
 
 .turtle_icon.gif {
@@ -69,13 +78,3 @@ body{
     background-color: #f0f0f0; /* Background color on hover */
 }
 
-.clickme {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    margin: 10px; /* Optional: Add some margin for spacing */
-}
-
-.clickme {
-    max-width: 100px; /* Set the maximum width of the GIF */
-}
